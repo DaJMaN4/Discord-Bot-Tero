@@ -225,4 +225,4 @@ async def f():
 
 backups.start()
 f.start()
-client.run('OTk0OTU0MzE0NzMwNzEzMjA5.GDJ-Hr._oKikw6uiHizFUwGh44_0dMkttUcjVj5PI2JlA')
+client.run("Token")
