@@ -7,11 +7,11 @@ commands:
 
 Duration optinos: 
 
-m - minute 
-h - hour 
-d - day 
-M - month 
-y - year 
+m - minute  
+h - hour  
+d - day   
+M - month   
+y - year  
 
 examples of using commands: 
 
