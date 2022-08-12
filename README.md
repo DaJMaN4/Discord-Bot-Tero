@@ -18,3 +18,6 @@ examples of using commands:
 !addrole DaJMaN vip 44d 
 
 !removerole DaJMaN vip 
+
+prefix can be change in by changing the string in this line client = commands.Bot(command_prefix='!')
+New string will be the prefix 
