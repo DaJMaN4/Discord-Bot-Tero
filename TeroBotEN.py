@@ -5,11 +5,13 @@ from datetime import datetime
 import discord
 import numpy as np
 import re
-import os
+from os import path, makedirs
+
 
 client = commands.Bot(command_prefix='!')
 dataFile = "data.npy"
 
+nameOfBackupFolder = "Tero-backups"
 
 try:
     data = np.load(dataFile, allow_pickle='TRUE').item()
@@ -17,8 +19,8 @@ except:
     np.save(dataFile, {})
 
 
-if not os.path.isdir("backups"):
-   os.makedirs("backups")
+if not path.isdir(nameOfBackupFolder):
+    makedirs(nameOfBackupFolder)
 
 
 def load(userID, roleName, guildID, amount, type):
@@ -165,7 +167,7 @@ async def backups():
     data = np.load(dataFile, allow_pickle='TRUE').item()
     if data != {}:
         now = datetime.now()
-        np.save("backups/" + str(dt.date.today()) + "-" + now.strftime("%H") + "." + now.strftime("%M") + ".npy", data)
+        np.save(nameOfBackupFolder + "/" + str(dt.date.today()) + "-" + now.strftime("%H") + "." + now.strftime("%M") + ".npy", data)
 
 
 @tasks.loop(minutes=1)
@@ -225,4 +227,4 @@ async def f():
 
 backups.start()
 f.start()
-client.run("Token")
+client.run("OTk0OTU0MzE0NzMwNzEzMjA5.GZHDZ9.u9mj3lyB1o7BFYxti4L5S2RI29iwBMq0sCl128")
