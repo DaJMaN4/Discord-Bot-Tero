@@ -4,7 +4,6 @@ Currently this bot has only options to give temporary a role to an user. But it 
 ## Commands:
 - !addrole user role duration
 - !removerole user role 
-- 
 
 ## Duration optinos: 
 
