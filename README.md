@@ -33,6 +33,7 @@ Usage:
 !writePLC tag value
 
 Tag must be an existing tag in PLCs memory
+
 Value must be an boolean, you can write it like this: true, false, 0, 1
 
 
