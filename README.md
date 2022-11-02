@@ -24,3 +24,16 @@ y - year
 prefix can be change by changing the string in this line: client = commands.Bot(command_prefix='!')
 
 New string will be new prefix 
+
+## PLC communication script: 
+Enables to read digital tags of siemens PLCs and writes value of digital tags into PLCs memory
+
+Usage: 
+
+!writePLC tag value
+
+Tag must be an existing tag in PLCs memory
+Value must be an boolean, you can write it like this: true, false, 0, 1
+
+
+Made for fun 
